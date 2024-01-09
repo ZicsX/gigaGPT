@@ -25,17 +25,17 @@ heads: 12
 out_dir: model_dir
 # dataset can also point to either of the shakespeare datasets (see the data
 # directory for preprocessing info) or a custom dataset that you provide yourself
-dataset: /path/to/openwebtext # replace this with the correct absolute path before running
+dataset: data/openwebtext # replace this with the correct absolute path before running
 batch_size: 120
 sequence_length: 2048
 num_steps: 9037
 checkpoint_steps: 1000
 learning_rate: 6.0e-4
 warmup_steps: 1525
-backend: "CSX"
+backend: "GPU"
 precision_opt_level: 1
 mount_dirs:
   - /path/to/code/location
   - /path/to/data/location
 python_paths:
-  - /path/to/code/location
+  - /opt/conda/bin/python
