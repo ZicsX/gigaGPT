@@ -35,7 +35,7 @@ warmup_steps: 1525
 backend: "GPU"
 precision_opt_level: 1
 mount_dirs:
-  - /path/to/code/location
-  - /path/to/data/location
+  - /nlsasfs/home/indus/nsbrahme/gigaGPT
+  - /nlsasfs/home/indus/nsbrahme/gigaGPT/data/openwebtext/
 python_paths:
-  - /opt/conda/bin/python
+  - /nlsasfs/home/indus/nsbrahme/miniconda3/envs/tensorflow_env/bin/python
